@@ -84,7 +84,7 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("🔸Bᴇsᴛ Dᴇᴀʟs🔹", url="https://t.me/DailyDealsandoffers10")],
             InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
                     ]     
-                ]
+                ]]
             )
         )
     else:
