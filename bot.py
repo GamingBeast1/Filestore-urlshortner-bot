@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 
                     [
-                        InlineKeyboardButton("🔸Mᴏᴠɪᴇs Gʀᴏᴜᴘ🔹", url="https://t.me/MoviesGalaxy120")
+                     InlineKeyboardButton("🔸Mᴏᴠɪᴇs Gʀᴏᴜᴘ🔹", url="https://t.me/MoviesGalaxy120")
                     ],
                     [
                         InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
