@@ -356,9 +356,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     [
                        InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
                         InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
-                    ],
-                    [
-                      InlineKeyboardButton("•ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ•", callback_data="sourcedata")  
+                    ], 
                     [
                         InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
                     ]
