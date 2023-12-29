@@ -73,7 +73,7 @@ async def start(bot: Client, cmd: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("🔸Mᴏᴠɪᴇs Gʀᴏᴜᴘ🔹", url="https://t.me/MoviesGalaxy120")],
-                [(InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
+                [(InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot")],
                  [(InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")],
                     [InlineKeyboardButton("🔸Bᴇsᴛ Dᴇᴀʟs🔹", url="https://t.me/DailyDealsandoffers10"),
                      (InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")]
