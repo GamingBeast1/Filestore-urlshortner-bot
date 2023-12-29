@@ -382,7 +382,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ]
             )
         )
-        elif "disclaimerdata" in cb_data:
+elif "disclaimerdata" in cb_data:
         await cmd.message.edit(
             Config.DISCLAIMER_TXT,
             disable_web_page_preview=True,
