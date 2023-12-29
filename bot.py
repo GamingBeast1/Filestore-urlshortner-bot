@@ -317,7 +317,23 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈", callback_data="sourcedata")
+                        InlineKeyboardButton("◈sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈", callback_data="sourcedata")
+                    ],
+                    [
+                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
+                    ]
+                ]
+            )
+        )
+    elif "sourcedata" in cb_data:
+        await cmd.message.edit(
+            Config.SOURCE_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈",
+                                             url="https://t.me/EK4MPREETSINGH")
                     ],
                     [
                         InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
@@ -363,23 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 ]
             )
         )
-        elif "sourcedata" in cb_data:
-        await cmd.message.edit(
-            Config.SOURCE_TXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈",
-                                             url="https://t.me/EK4MPREETSINGH")
-                    ],
-                    [
-                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
-                    ]
-                ]
-            )
-        )
-
+        
     elif "refreshForceSub" in cb_data:
         if Config.UPDATES_CHANNEL:
             if Config.UPDATES_CHANNEL.startswith("-100"):
