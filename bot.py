@@ -133,8 +133,8 @@ async def main(bot: Client, message: Message):
         await message.reply_text(
             text="**Choose an option from below:**",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("Save in Batch", callback_data="addToBatchTrue")],
-                [InlineKeyboardButton("Get Sharable Link", callback_data="addToBatchFalse")]
+                [InlineKeyboardButton("ꜱᴀᴠᴇ ᴛᴏ ʙᴀᴛᴄʜ❄️", callback_data="addToBatchTrue")],
+                [InlineKeyboardButton("ɢᴇᴛ ꜱʜᴀʀᴀʙʟᴇ ʟɪɴᴋ🔗", callback_data="addToBatchFalse")]
             ]),
             quote=True,
             disable_web_page_preview=True
@@ -317,12 +317,10 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈",
-                                             url="https://t.me/EK4MPREETSINGH")
+                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈", callback_data="sourcedata")
                     ],
                     [
-                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome"),
-                        InlineKeyboardButton("👨‍💻ᴀʙᴏᴜᴛ ᴅᴇᴠ", callback_data="aboutdevs")
+                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
                     ]
                 ]
             )
@@ -335,11 +333,10 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈",
+                        InlineKeyboardButton("◈​🇩​​🇲​ ​🇭​​🇪​​🇷​​🇪◈",
                                              url="https://t.me/EK4MPREETSINGH")
                     ],
                     [
-                        InlineKeyboardButton("•ᴀʙᴏᴜᴛ•", callback_data="aboutbot"),
                         InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
                     ]
                 ]
@@ -361,7 +358,26 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
                     ],
                     [
+                      InlineKeyboardButton("•ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ•", callback_data="sourcedata")  
+                    [
                         InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
+                    ]
+                ]
+            )
+        )
+
+        elif "sourcedata" in cb_data:
+        await cmd.message.edit(
+            Config.SOURCE_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("◈ʙᴜʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ◈",
+                                             url="https://t.me/EK4MPREETSINGH")
+                    ],
+                    [
+                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
                     ]
                 ]
             )
