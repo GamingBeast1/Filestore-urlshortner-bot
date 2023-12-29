@@ -21,27 +21,20 @@ class Config(object):
 🔸I am file store bot that will permanently store your given file and will provide you a permanent link to access that file.🔸
 
 🤖 **ᴍʏ ɴᴀᴍᴇ:** [Gᴀʟᴀxʏ ꜰɪʟᴇꜱ ꜱᴛᴏʀᴇ ʙᴏᴛ](https://t.me/{BOT_USERNAME})
-
 📝 **ʟᴀɴɢᴜᴀɢᴇ:** [Python](https://www.python.org)
-
 📚 **ʟɪʙʀᴀʀʏ:** [Pyrogram](https://docs.pyrogram.org)
-
 📡 **ʜᴏꜱᴛᴇᴅ ᴏɴ:** [koyeb](https://app.koyeb.com)
-
 🧑🏻‍💻 **Dᴇᴠʟᴏᴘᴇʀ:** [Eᴋᴀᴍᴘʀᴇᴇᴛ⑅Sɪɴɢʜ](https://t.me/EK4MPREETSINGH)
-
 🎬 **Mᴏᴠɪᴇs Gʀᴏᴜᴘ** [Mᴏᴠɪᴇs Gᴀʟᴀxʏ](https://t.me/Moviesgalaxy120)
 """
+  SOURCE_TXT = """ • ᴛʜɪꜱ ɪꜱ ᴀ ᴜᴘᴅᴀᴛᴇᴅ ᴀɴᴅ ᴘʀᴇᴍɪᴜᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ ʙʏ ᴇᴋᴀᴍᴘʀᴇᴇᴛ ꜱɪɴɢʜ
+• ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ɪᴛ ꜰʀᴏᴍ ᴍʏ ᴏᴡɴᴇʀ """
+  
   ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: [Eᴋᴀᴍᴘʀᴇᴇᴛ⑅Sɪɴɢʜ](https://telegram.me/EK4MPREETSINGH)
- 
-
 """
   HOME_TEXT = """
 ʜᴇʏ, [{}](tg://user?id={})\n\nɪ'ᴍ ᴀ ᴘᴇʀᴍᴀɴᴇɴᴛ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ.\n🔹Jᴜsᴛ sᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ ᴘᴇʀᴍᴀᴍᴇɴᴛʟʏ sᴛᴏʀᴇ ɪᴛ ᴀɴᴅ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴀ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴛᴏ ᴀᴄᴄᴇss ɪᴛ.
 
-⬤ Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: [Eᴋᴀᴍᴘʀᴇᴇᴛ Sɪɴɢʜ](https://t.me/EK4MPREETSINGH)
+🔸 Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: [Eᴋᴀᴍᴘʀᴇᴇᴛ Sɪɴɢʜ](https://t.me/EK4MPREETSINGH)
 """
-
-SOURCE_TXT = """ • ᴛʜɪꜱ ɪꜱ ᴀ ᴜᴘᴅᴀᴛᴇᴅ ᴀɴᴅ ᴘʀᴇᴍɪᴜᴍ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ ʙʏ ᴇᴋᴀᴍᴘʀᴇᴇᴛ ꜱɪɴɢʜ
-• ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ɪᴛ ꜰʀᴏᴍ ᴍʏ ᴏᴡɴᴇʀ """
