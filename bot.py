@@ -364,13 +364,14 @@ async def button(bot: Client, cmd: CallbackQuery):
             Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
+                    [
                     [
                         InlineKeyboardButton("🔸Mᴏᴠɪᴇs Gʀᴏᴜᴘ🔹", url="https://t.me/MoviesGalaxy120"),
                         InlineKeyboardButton("🔸Bᴇsᴛ Dᴇᴀʟs🔹", url="https://t.me/DailyDealsandoffers10")
                     ],
                     [
                       InlineKeyboardButton("❗ᴅɪꜱᴄʟᴀɪᴍᴇʀ❗", callback_data="disclaimerdata")
+                    ],
                     [
                        InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
                         InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
@@ -378,7 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     [
                         InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
                     ]
-                ]
+                    ]
             )
         )
         elif "disclaimerdata" in cb_data:
