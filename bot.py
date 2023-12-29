@@ -367,13 +367,10 @@ elif "disclaimerdata" in cb_data:
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
-                ]
+                [InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")]
             ]
         )
     )
-
 
     elif "gotohome" in cb_data:
         await cmd.message.edit(
