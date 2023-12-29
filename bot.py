@@ -344,19 +344,6 @@ async def button(bot: Client, cmd: CallbackQuery):
             )
         )
 
-        elif "disclaimerdata" in cb_data:
-        await cmd.message.edit(
-            Config.DISCLAIMER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
-                    ]
-                ]
-            )
-        )
-
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_DEV_TEXT,
@@ -367,6 +354,19 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("◈​🇩​​🇲​ ​🇭​​🇪​​🇷​​🇪◈",
                                              url="https://t.me/EK4MPREETSINGH")
                     ],
+                    [
+                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
+                    ]
+                ]
+            )
+        )
+
+            elif "disclaimerdata" in cb_data:
+        await cmd.message.edit(
+            Config.DISCLAIMER_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
                     [
                         InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
                     ]
