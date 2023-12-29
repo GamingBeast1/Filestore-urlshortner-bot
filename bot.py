@@ -82,6 +82,9 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
                     ],
                     [
+                        InlineKeyboardButton("❗ᴅɪꜱᴄʟᴀɪᴍᴇʀ❗", callback_data="disclaimerdata")
+                    ],
+                    [
                         InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
                     ]
                 ]
@@ -109,6 +112,19 @@ async def start(bot: Client, cmd: Message):
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
+        
+elif "disclaimerdata" in cb_data:
+        await cmd.message.edit(
+            Config.DISCLAIMER_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
+                    ]
+                ]
+            )
+        )
 
 @Bot.on_message((filters.document | filters.video | filters.audio | filters.photo) & ~filters.chat(Config.DB_CHANNEL))
 async def main(bot: Client, message: Message):
@@ -382,18 +398,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ]
             )
         )
-elif "disclaimerdata" in cb_data:
-        await cmd.message.edit(
-            Config.DISCLAIMER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("◁ʙᴀᴄᴋ", callback_data="gotohome")
-                    ]
-                ]
-            )
-        )
+
     elif "refreshForceSub" in cb_data:
         if Config.UPDATES_CHANNEL:
             if Config.UPDATES_CHANNEL.startswith("-100"):
