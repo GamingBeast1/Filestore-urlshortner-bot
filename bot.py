@@ -363,7 +363,6 @@ async def button(bot: Client, cmd: CallbackQuery):
                 ]
             )
         )
-
         elif "sourcedata" in cb_data:
         await cmd.message.edit(
             Config.SOURCE_TXT,
