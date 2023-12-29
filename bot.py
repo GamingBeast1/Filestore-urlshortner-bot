@@ -312,7 +312,7 @@ async def clear_user_batch(bot: Client, m: Message):
 async def button(bot: Client, cmd: CallbackQuery):
 
             cb_data = cmd.data
-    if "aboutbot" in cb_data:
+    if "disclaimerdata" in cb_data:
         await cmd.message.edit(                
         elif "disclaimerdata" in cb_data:
         await cmd.message.edit(
