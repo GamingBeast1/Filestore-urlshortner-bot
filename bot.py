@@ -78,11 +78,11 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("🔸Bᴇsᴛ Dᴇᴀʟs🔹", url="https://t.me/DailyDealsandoffers10")
                     ],
                     [
-                       InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
-                        InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
+                        InlineKeyboardButton("❗ᴅɪꜱᴄʟᴀɪᴍᴇʀ❗", callback_data="disclaimerdata")
                     ],
                     [
-                        InlineKeyboardButton("❗ᴅɪꜱᴄʟᴀɪᴍᴇʀ❗", callback_data="disclaimerdata")
+                       InlineKeyboardButton("•Aʙᴏᴜᴛ•", callback_data="aboutbot"),
+                        InlineKeyboardButton("•Oᴡɴᴇʀ•", callback_data="aboutdevs")
                     ],
                     [
                         InlineKeyboardButton("ᴄʟᴏsᴇ🔐", callback_data="closeMessage")
@@ -420,6 +420,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     text="Something went Wrong. Contact my [ᴏᴡɴᴇʀ](https://t.me/EK4MPREETSINGH).",
                     disable_web_page_preview=True
                 )
+                
                 return
         await cmd.message.edit(
             text=Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
@@ -429,6 +430,9 @@ async def button(bot: Client, cmd: CallbackQuery):
                     [
                         InlineKeyboardButton("🔸ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ🔹", url="https://t.me/moviesGalaxy120"),
                         InlineKeyboardButton("🔸ʙᴇsᴛ ᴅᴇᴀʟs", url="https://t.me/dailydealsandoffers10")
+                    ],
+                    [
+                        InlineKeyboardButton("❗ᴅɪꜱᴄʟᴀɪᴍᴇʀ❗", callback_data="disclaimerdata")
                     ],
                     [
                         InlineKeyboardButton("•ᴀʙᴏᴜᴛ•", callback_data="aboutbot"),
